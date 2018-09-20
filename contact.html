@@ -2,23 +2,36 @@
 <!--
   Name: Diego Chico
   Date Created: 09122018
-  Most recent revisison: 09132018
+  Most recent revisison: 09182018
 -->
 <html lang="en">
   <head>
     <title>Contact Us</title>
+    <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      form {
+        width: 350px;
+        margin: auto;
+        text-align: right;
+      }
+
+      form label {
+        font-weight: bold;
+      }
+
+    </style>
   </head>
 
   <body>
     <header>
       <h1>Galaxy Place</h1>
     </header>
-    <nav>
-      <hr />
+    <nav class="border">
       <p><a href="home.html">Home</a></p>
       <p><a href="menu.html">Menu</a></p>
       <p><a href="contact.html">Contact Us</a></p>
-    <hr />
+      <div class="clear-float"></div>
     </nav>
 
 <section>
@@ -30,7 +43,7 @@
     <label for="phone">Phone: </label>
     <input type="text" id="phone" name="phone"><br />
 
-      Reason for Inquiry: <select name="inquiry">
+    <strong>Reason for Inquiry:</strong> <select name="inquiry">
       <option value="Catering">Catering</option>
       <option value="Party">Private Party</option>
       <option value="Feedback">Feedback</option>
@@ -39,11 +52,11 @@
 
     Additional Information: <textarea name="additionalInfo"></textarea><br />
 
-    Have you been to the restaurant:
+    <strong>Have you been to the restaurant:</strong>
     <input type="radio" name="answer" value="No" checked />No
     <input type="radio" name="answer" value="Yes" />Yes<br />
 
-    Best days to contact you:
+    <strong>Best days to contact you:</strong>
     <input type="checkbox" name="days" value="Monday" />M
     <input type="checkbox" name="days" value="Tuesday" />T
     <input type="checkbox" name="days" value="Wednesday" />W

@@ -2,12 +2,50 @@
 <!--
   Name: Diego Chico
   Date Created: 09122018
-  Most recent revisison: 09132018
+  Most recent revisison: 09182018
 -->
 <html lang="en">
 
 <head>
   <title>Menu</title>
+  <link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    .food td {
+      text-align: center;
+      vertical-align: top;
+    }
+
+    .food th {
+      font-size: 1.25em;
+    }
+
+    .drinks th {
+      font-size: 1.25em;
+      text-align: left;
+    }
+
+    .drinks tr {
+      height: 50px;
+    }
+
+    .drinks tr:nth-child(odd) {
+      background-color: #a7a7a9;
+    }
+
+    .drinks tr:nth-child(even) {
+      background-color: #797270;
+      color: #c1edcc;
+    }
+
+    .drinks table {
+      border: 1px solid #453f3c;
+    }
+
+    body {
+      background-color: #b5bfbc;
+    }
+  </style>
 </head>
 
 <body>
@@ -15,17 +53,16 @@
     <h1>Galaxy Place</h1>
   </header>
 
-  <nav>
-    <hr />
+  <nav class="border">
     <p><a href="home.html">Home</a></p>
     <p><a href="menu.html">Menu</a></p>
     <p><a href="contact.html">Contact Us</a></p>
-    <hr />
+    <div class="clear-float"></div>
   </nav>
 
   <section>
     <article id="menu">
-      <table width="90%">
+      <table class="food" width="90%">
         <tr>
           <th>Burger and Fries</th>
           <th>Hot Dog and Chips</th>
@@ -40,7 +77,7 @@
           </td>
       </table>
 
-      <table width="90%">
+      <table class="food" width="90%">
         <tr>
           <th>Tenderloin Sandwich and Chips</th>
           <th>House Salad</th>
@@ -58,11 +95,41 @@
     </article>
   </section>
 
+  <section>
+    <article class="drinks">
+      <table class="drinks" cellspacing="0" width="90%">
+        <tr>
+          <th colspan="2">Beverages</th>
+        </tr>
+
+        <tr>
+        <td>Root Beer</td>
+        <td>$3.00</td>
+        </tr>
+
+        <tr>
+        <td>Bottled Water</td>
+        <td>$1.25</td>
+        </tr>
+
+        <tr>
+        <td>Lemonade</td>
+        <td>$1.00</td>
+        </tr>
+
+        <tr>
+        <td>Iced Tea</td>
+        <td>$1.25</td>
+        </tr>
+
+      </table>
+    </article>
+  </section>
+
   <footer>
     <hr />
     <p>123 N Jupiter St, Jefferson, NC, 28694</p>
     <p>(237)651-9872</p>
-    <hr />
   </footer>
 </body>
 
