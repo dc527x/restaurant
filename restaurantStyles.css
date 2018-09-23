@@ -4,7 +4,7 @@ Date created: 09182018
 Date last modified: 09182018
 */
 
-header, footer {
+header h2, footer {
 background-color: #453f3c;
 color: #c1edcc;
 height: 75px;
@@ -12,15 +12,13 @@ text-align: center;
 font-family: arial, helvetica, sans-serif;
 }
 
-header {
-  padding-top: 1px;
-}
-
 nav {
-  border-top: 1px solid #797270;
-  border-bottom: 1px solid #797270;
+  border-top: thin solid #797270;
+  border-bottom: thin solid #797270;
   margin-top: 4px;
   margin-bottom: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 nav a{
@@ -37,10 +35,16 @@ nav a:visited {
   color: #797270;
 }
 
+
 nav a:hover {
   font-weight: bold;
 }
 
 nav a:active {
   text-decoration: none;
+}
+
+nav .btn {
+  background-color: beige;
+  color: #c1edcc;
 }
